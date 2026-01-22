@@ -2,13 +2,11 @@
     font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
-}
-
-img{
-    background-color: white;
+    color: white;
 }
 
 body{
+    background-color: black;
     margin: 0 auto;
 }
 
@@ -19,46 +17,222 @@ header{
 
 header nav{
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: black;
-    height: 6em;
+    opacity: 0.91;
+    height: 5em;
+}
+
+header nav div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 header nav div ul{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 60%;
 }
 
 header nav div ul li {
     list-style-type: none;
     margin: 0 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 header nav div ul li a:hover{
     color: #0070f3;
-    transition: all 0.2s;
+    transition: all 0.13s;
 }
 
 header nav div ul li a{
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 
 header nav .nav-derecha ul li {
-    border: 1.2px solid white;
+    border: solid 1px white;
+    background-color: rgba(255, 255, 255, 0.106);
     padding: .6em 1em;
     border-radius: 9px;
     color: white;
+    margin: 0 0.5em;
 }
 
 header nav .nav-derecha ul li:hover{
-    background-color: #0071f334;
     border: solid 1px #0070f3;
-    transition: all 0.2s;
+    background-color: #0071f334;
+    transition: all 0.13s;
 }
 
+header nav .nav-derecha ul li a:hover{
+    color: white;
+}
+
+/* CABECERA PRINCIPAL */
+main .cabecera-principal{
+    height: 650px;
+    background-image: url(../Multimedia/Imagenes/escritorio-main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2500px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .cabecera-principal div{
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .cabecera-principal div p{
+    margin-bottom: 1.5em;
+}
+
+main .cabecera-principal div h1, main .cabecera-principal div p{
+    color: white;
+    text-align: center;
+}
+
+main .cabecera-principal div h1{
+    margin-bottom: 0.1em;
+    font-size: 5em;
+}
+
+main .cabecera-principal h1:hover{
+    color: #0070f3;
+    transition: all 0.13s;
+}
+
+main .cabecera-principal p{
+    font-weight: 100;
+}
+
+.boton{
+    margin: 0 9em;
+    border: solid 1px #0070f3;
+    background-color: #0071f334;
+    padding: .6em 1em;
+    border-radius: 9px;
+    color: white;
+    text-align: center;
+}
+
+.boton:hover{
+    background-color: #0070f3;
+    transition: all 0.13s;
+}
+.boton a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.articulo1{
+    background-color: white;
+}
+
+.articulo1 h2{
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: #0070f3;
+    color: white;
+}
+
+.articulo1 div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.articulo1 div div{
+    width: 20em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.articulo1 div div p{
+    color: black;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.articulo1 div div img{
+    height: 15em;
+    width: auto;
+}
+
+/* SLONGAN ENTRE ARTÍCULOS */
+.slogan{
+    padding: 1em 0;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.slogan h4{
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+/* ARITULO SOBRE NOSOTROS */
+.articulo2{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.articulo2 div{
+    width: 50%;
+    padding: 3em 10em;
+}
+
+.articulo2 div h2, .articulo2 div p{
+    text-align: left;
+    color: black;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+.articulo2 div p{
+    margin-bottom: 2em;
+}
+
+.articulo2 div h2{
+    color: black;
+}
+
+.articulo2 div ul li, .articulo2 div ul li b{
+    line-height: 2em;
+    color: black;
+}
+
+.compromiso{
+    background-color: #0070f3;
+}
+
+.articulo2 .compromiso h2, .articulo2 .compromiso ul li, .articulo2 .compromiso ul li b{
+    color: white;
+}
 /* ===== FOOTER GENERAL ===== */
 footer {
     background-color: rgb(12, 12, 12);

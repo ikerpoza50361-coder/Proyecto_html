@@ -20,19 +20,22 @@
 <header>
     <nav>
         <div>
-            <p><a href="index.html"><img width="100" src="Multimedia/Imagenes/icono.png" alt="icono"></a></p>
-        </div>
-        <div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Paginas/quienes-somos.html">Sobre Nosotros</a></li>
                 <li><a href="Paginas/productos.html">Nuestros Productos</a></li>
-                <li><a href="Paginas/Contacto/contacto.html">Contacto</a></li>
             </ul>
+        </div>
+        <div>
+            <p><a href="index.html"><img class="icono" width="80" src="Multimedia/Imagenes/icono-blanco.png" alt="icono"></a></p>
         </div>
         <div class="nav-derecha">
             <ul>
-                <li><a href="Paginas/Compra/registro.html">Mi carro</a></li>
+                <li><a href="Paginas/Contacto/contacto.html">Contacto</a></li>
+                <li><a href="Paginas/Compra/registro.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg></a></li>
             </ul>
         </div>
     </nav>
@@ -40,48 +43,59 @@
 
 <!-- CABECERA PRINCIPAL  -->
 <main>
-    <div>
-        <h1>HardPoint</h1>
-        <p><b>Expertos en tecnolog&iacute;a</b> con un servicio de 5 estrellas</p>
+    <div class="cabecera-principal">
+        <div>
+            <h1>HardPoint</h1>
+            <p><b>Expertos en tecnolog&iacute;a</b> con un servicio de 5 estrellas</p>
+            <span class="boton"><a href="Paginas/productos.html">Nuestros productos</a></span>
+        </div>
     </div>
-    
-    
-
-    <p><a href="Paginas/quienes-somos.html">Sobre nosotros</a></p>
-
 <!-- Artículo donde se explican los PRODUCTOS que tenemos RESUMIDOS -->
-<article>
+<article class="articulo1">
     <h2>Productos</h2>
-    <p>Los mejores productos con precios &uacute;nicos y entraga r&aacute;pida!</p>
-    <p><img width="300" src="Multimedia/Imagenes/portatil.jpg" alt="portatiles"></p>
-    <p>Portatiles</p>
-    <p><img height="300" src="Multimedia/Imagenes/sobremesa.jpg" alt="Ordenador de sobremesa"></p>
-    <p>PC</p>
-    <p><img width="300" src="Multimedia/Imagenes/movil.jpg" alt="Moviles"></p>
-    <p>Moviles</p>
+    <div>
+        <div>
+            <p><img width="300" src="Multimedia/Imagenes/portatil.jpg" alt="portatiles"></p>
+            <p>Portatiles</p>
+        </div>
+        <div>
+            <p><img height="300" src="Multimedia/Imagenes/sobremesa.jpg" alt="Ordenador de sobremesa"></p>
+            <p>PC</p>
+        </div>
+        <div>
+            <p><img width="300" src="Multimedia/Imagenes/movil.jpg" alt="Moviles"></p>
+            <p>Moviles</p>
+        </div>
+    </div>
 </article>
 
 <!-- Artículo que sirve de separador entre artículos estilo ESLOGAN  -->
-<article>
-    <h4>Más que una tienda online de inform&aacute;tica, somos tu socio en tecnolog&iacute;a: compromiso real, rendimiento garantizado</h4>
+<article class="slogan">
+    <h4><b >"</b>Más que una tienda online de inform&aacute;tica, somos tu socio en tecnolog&iacute;a: compromiso real, rendimiento garantizado<b>"</b></h4>
 </article>
 
 <!-- Articulo que explica el SOBRE NOSOTROS en el INDEX -->
-<article>
-    <h2>Sobre nosotros</h2>
+<article class="articulo2">
+    <div>
+        <h2>Sobre nosotros</h2>
 
     <p>
         En HardPoint somos m&aacute;s que una tienda online de hardware: somos tu aliado tecnol&oacute;gico. Nuestra pasi&oacute;n por la inform&aacute;tica, la calidad y la innovaci&oacute;n nos impulsa a ofrecerte siempre los mejores componentes, con un servicio r&aacute;pido, cercano y totalmente comprometido contigo.
-
+    </p>
+    <p>
         Desde nuestros inicios, trabajamos con un objetivo claro: hacer que cada cliente encuentre exactamente lo que necesita para construir, mejorar o mantener su equipo con total confianza. Nos mueve la fiabilidad, la transparencia y la excelencia en cada detalle, desde la selecci&oacute;n de productos hasta el soporte postventa.
     </p>
-    <p><b>Nuestro compromiso contigo</b></p>
+    </div>
+
+    <div class="compromiso">
+        <h2>Nuestro compromiso contigo</h2>
     <ul>
         <li><b>Envíos rápidos y seguros:</b> entrega en 24/48 horas y env&iacute;o gratuito a partir de 50 €.</li>
         <li><b>Garant&iacute;a sin compromisos:</b> te ofrecemos la mejor soluci&oacute;n en menos de 24 h.</li>
         <li><b>Devoluciones f&aacute;ciles y gratuitas:</b>, porque sabemos que la confianza se gana siendo flexibles.</li>
         <li><b>Atenci&oacute;n cercana y profesional:</b> soporte t&eacute;cnico real, sin esperas.</li>
     </ul>
+    </div>
 
 </article>
 </main>
