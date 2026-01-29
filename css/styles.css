@@ -2,12 +2,12 @@
     font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
-    color: white;
 }
 
 body{
     background-color: black;
     margin: 0 auto;
+    color: white;
 }
 
 header{
@@ -236,7 +236,7 @@ main .cabecera-principal p{
 .articulo2 .compromiso h2, .articulo2 .compromiso ul li, .articulo2 .compromiso ul li b{
     color: white;
 }
-/* ===== FOOTER GENERAL ===== */
+/* FOOTER GENERAL */
 footer {
     background-color: rgb(12, 12, 12);
     display: flex;
@@ -246,14 +246,14 @@ footer {
     color: white;
 }
 
-/* ===== CONTENEDOR PRINCIPAL ===== */
+/* CONTENEDOR PRINCIPAL */
 #contfooter {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-/* ===== MENÚ ===== */
+/* MENÚ */
 #menu {
     display: flex;
     width: 30%;
@@ -271,7 +271,7 @@ footer {
     text-align: center;
 }
 
-/* ===== DETALLES ===== */
+/* DETALLES */
 #detalles {
     display: flex;
     flex-direction: column;
@@ -279,7 +279,7 @@ footer {
     width: 70%;
 }
 
-/* ===== INFORMACIÓN ===== */
+/* INFORMACIÓN */
 #informacion {
     display: flex;
     justify-content: center;
@@ -301,7 +301,7 @@ footer {
     align-items: center;
 }
 
-/* ===== MAPA ===== */
+/* MAPA */
 #mapa {
     display: flex;
     justify-content: center;
@@ -311,14 +311,14 @@ footer {
     width: 90%;
 }
 
-/* ===== REDES SOCIALES ===== */
+/* REDES SOCIALES */
 #social {
     display: flex;
     justify-content: center;
     margin: 1em auto;
 }
 
-/* ===== LINKS ===== */
+/* LINKS */
 #menu a,
 #informacion a,
 #social a {
@@ -326,7 +326,14 @@ footer {
     text-decoration: none;
 }
 
-/* ===== DERECHOS ===== */
+#menu a:hover,
+#informacion a:hover,
+#social a:hover {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+/* DERECHOS */
 #derechos {
     display: flex;
     justify-content: center;
@@ -335,6 +342,121 @@ footer {
     padding: 1em;
 }
 
+/* Productos */
+.productos{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: white;
+}
+
+.productos h2{
+    width: 100%;
+    text-align: center;
+    margin: 1em auto;
+    color: black;
+}
+
+article.producto {
+    width: 700px;
+    margin: 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* CABECERA */
+.cabezeraproducto {
+    display: flex;
+    padding: 25px;
+}
+
+/* IMAGEN */
+.cabezeraproducto .imagen img {
+    width: 15em;
+    height: auto;
+}
+
+/* TÍTULO Y PRECIO */
+.cabezeraproducto .titulo h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.cabezeraproducto .titulo a {
+    font-size: 0.9rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 9px;
+    padding: .5em;
+    background-color: white;
+    border: 1px black solid;
+}
+
+.cabezeraproducto .titulo a:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.precio {
+    margin-top: 1em;
+    font-size: 1.6rem;
+    font-weight: 750;
+    color: #0070f3;
+    text-align: left;
+}
+
+/* CONTENIDO INFERIOR */
+.contenido-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 25px 25px;
+}
+
+/* BENEFICIOS */
+.beneficios p {
+    color: #0f172a;
+}
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+}
+
+.beneficios li {
+    font-size: 0.95rem;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+/* BOTÓN AÑADIR */
+.anadir a {
+    display: flex;
+    align-items: center;
+    background: #0ea4e9a1;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(14, 165, 233, 0.35);
+}
+
+.anadir a:hover {
+    background: #0070f3;
+}
+
+/* ICONO */
+.anadir svg {
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin-right: .5em;
+} 
 /* FORMULARIOS */
 .formulario{
     display: flex;
