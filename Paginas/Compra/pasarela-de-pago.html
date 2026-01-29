@@ -43,44 +43,71 @@
 
 <!--Articulo con el formulario de la pasarela de pago-->
 <main>
-<article>
-    <h3>Pasarela de Pago</h3>
+<article class="formulario">
     <form action="compra-confirmada.html" method="post">
-        <p>
-            Selecciona un m&eacute;todo de env&iacute;o*
-        </p>
-        <input type="radio" name="opciones" id="domicilio" required>
-        <label for="domicilio">Env&iacute;o a domic&iacute;lio</label>
-        <input type="radio" name="opciones" id="recogida">
-        <label for="recogida">Punto de recogida</label>
-        <br>
 
-        <label for="tarjeta"> Datos de pago</label>
-        <br>
-        <input type="text" name="numero-tarjeta" id="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" pattern="^([0-9]{4}-){3}[0-9]{4}$" required>
-        <br>
-        <label for="expiracion">Expiraci&oacute;n</label>
-        <label for="ccv">CCV</label>
-        <br>
-        <input type="date" name="expiracion" id="expiracion" required >
-        <input type="text" name="ccv" id="ccv" placeholder="XXX" pattern="^[0-9]{3}$" required>
-        <br>
-        <input type="text" name="titular" id="titular" placeholder="Nombre del titular" maxlength="40" required>
-        <br>
-        <p>Pol&iacute;tica de privacidad y env&iacute;o de publicidad</p>
-        <input type="checkbox" name="privacidad" id="privacidad" required>
-        <label for="privacidad">He le&iacute;do y acepto la Pol&iacute;tica de Privacidad *</label>
-        <br>
+        <h3>Pasarela de Pago</h3>
+
         <p>
+            Selecciona un m&eacute;todo de env&iacute;o
+        </p>
+        
+        <div class="union">
+            <input type="radio" name="opciones" id="domicilio" required>
+            <label for="domicilio">Env&iacute;o a domic&iacute;lio</label>
+        </div>
+
+        <div class="union">
+            <input type="radio" name="opciones" id="recogida">
+            <label for="recogida">Punto de recogida</label>
+        </div>
+
+        <p> Datos de pago</p>
+
+        <label for="tarjeta">Numero de tarjeta</label>
+        <input type="text" name="numero-tarjeta" id="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" pattern="^([0-9]{4}-){3}[0-9]{4}$" required>
+
+        <div class="datos-bancarios">
+            <div>
+                <label for="expiracion">Expiraci&oacute;n</label>
+                <input type="date" name="expiracion" id="expiracion" required >
+            </div>
+
+            <div>
+                <label for="ccv">CCV</label>
+                <input type="text" name="ccv" id="ccv" placeholder="XXX" pattern="^[0-9]{3}$" required>
+            </div>
+        </div>
+
+        <label for="titular">Nombre del titular</label>
+        <input type="text" name="titular" id="titular" placeholder="Nombre del titular" maxlength="40" required>
+
+        <p style="margin-top: 1em;">Pol&iacute;tica de privacidad y env&iacute;o de publicidad</p>
+
+        <div class="union">
+            <input type="checkbox" name="privacidad" id="privacidad" required>
+        <label for="privacidad">He le&iacute;do y acepto la Pol&iacute;tica de Privacidad *</label>
+        </div>
+
+        <p> <small>
             Autorizo el env&iacute;o de correos electr&oacute;nico con informaci&oacute;n, promociones y ofertas
             relacionadas con los productos y servicios de HardPoint, de acuerdo con la pol&iacute;tica de privacidad.
+            </small>
         </p>
-        <input type="radio" name="autorizar" id="aceptar" required checked>
-        <label for="aceptar">Acepto el env&iacute;o de informaci&oacute;n</label>
-        <input type="radio" name="autorizar" id="rechazar" required>
-        <label for="rechazar">No acepto el env&iacute;o de informaci&oacute;n</label>
-        <br><br>
-        <button type="submit">Enviar</button>
+        
+        <div class="union">
+            <input type="radio" name="autorizar" id="aceptar" required checked>
+            <label for="aceptar">Acepto el env&iacute;o de informaci&oacute;n</label>
+        </div>
+
+
+        <div class="union">
+            <input type="radio" name="autorizar" id="rechazar" required>
+            <label for="rechazar">No acepto el env&iacute;o de informaci&oacute;n</label>
+        </div>
+
+    
+        <input class="enviar" type="submit" name="pagar" id="pagar" value="Pagar">
     </form>
 </article><br>
 </main>

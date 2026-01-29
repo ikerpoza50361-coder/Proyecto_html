@@ -42,37 +42,40 @@
 
 <!--Articulo con el FORMULARIO CONTACTO -->
 <main>
-<article>
+<article class="formulario">
 
-    <h2>Ponte en contacto con nosotros</h2>
 
     <form action="envio-formulario.html" method="post" >
-        <label for="nombre">Nombre *</label> <br>
-        <input type="text" name="nombre" id="nombre" required size="20">
-        <br>
 
-        <label for="elegir">Empresa o Particular *</label><br>
+        <h3>Ponte en contacto con nosotros</h3>
+
+        <label for="nombre">Nombre *</label>
+        <input type="text" name="nombre" id="nombre" required size="20">
+    
+
+        <label for="elegir">Empresa o Particular *</label>
         <select name="elegir" id="elegir" required >
             <option value="" disabled selected >Selecciona una opción</option>
             <option value="empresa">Empresa</option>
             <option value="particular">Particular</option>
         </select>
-        <br>
+    
 
-        <label for="email">Correo electronico *</label><br>
+        <label for="email">Correo electronico *</label>
         <input type="email" name="email" id="email" required size="20" pattern="^[a-zA-Z0-9.]+@[a-zA-Z0-9.].[a-zA-Z]+{,3}$">
-        <br>
+    
 
-        <label for="telefono">Telefono</label><br>
+        <label for="telefono">Telefono</label>
         <input type="tel" name="telefono" id="telefono" size="20" pattern="[0-9]{9}" placeholder="XXXXXXXXX" >
-        <br>
+    
 
-        <label for="comentario">Cual es tu consulta *</label><br>
+        <label for="comentario">Cual es tu consulta *</label>
         <textarea name="comentario" id="comentario" required cols="20"></textarea>
-        <br>
 
-        <input type="submit" name="enviar" id="enviar" value="Enviar">
-        <input type="reset" name="borrar" id="borrar" value="Eliminar">
+        <div">
+            <input class="enviar" type="submit" name="enviar" id="enviar" value="Enviar">
+            <input class="eliminar" type="reset" name="borrar" id="borrar" value="Eliminar">
+        </div>
     </form>
 
 </article>

@@ -43,23 +43,22 @@
 
 <!--Articulo con el formulario de inicio de sesion-->
 <main>
-<article>
-  <h3>Inicio de Sesion</h3>
+<article class="formulario">
+        <form action="pasarela-de-pago.html" method="post" >
 
-  <form action="pasarela-de-pago.html" method="post" >
-    <label for="usuario">Usuario *</label> <br>
-    <input type="text" name="usuario" id="usuario" required size="20">
-    <br>
-    <br>
+        <h3>¡Bienvenido!</h3>
 
-    <label for="contraseña">Contraseña *</label><br>
-    <input type="password" name="contraseña" id="contraseña" required size="20">
-    <br>
-    <br>
+        <label for="usuario">Usuario *</label>
+        <input type="text" name="usuario" id="usuario" required size="20">
 
-    <input type="submit" name="enviar" id="enviar" value="Acceso">
-  </form>
-<p><a href="Registro/crear-cuenta.html">¿No tienes una cuenta?</a> &nbsp; <a href="Registro/recuperar-contrasena.html">¿Has olvidado la contraseña?</a></p>
+
+        <label for="contraseña">Contraseña *</label>
+        <input type="password" name="contraseña" id="contraseña" required size="20">
+
+        <input class="enviar" type="submit" name="enviar" id="enviar" value="Acceso">
+
+        <p style="font-size: 1em;"><a href="Registro/crear-cuenta.html">¿No tienes una cuenta?</a> &nbsp; <a href="Registro/recuperar-contrasena.html">¿Has olvidado la contraseña?</a></p>
+    </form>
 </article>
 </main>
 
